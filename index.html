@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>IOT Parking</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="rounded-element">
+        <div class="title">IoT Parking Sistem</div>
+        <div class="subtitle">
+          Kliknite na parking mjesto kako biste simulirali dolazak/odlazak
+          automobila
+        </div>
+      </header>
+      <div class="content-wrapper">
+        <main class="rounded-element">
+          <div class="horizontal-row" id="parentTOP"></div>
+          <div class="middle-grid">
+            <div class="vertical-row" id="parentLEFT"></div>
+            <div id="parentMIDDLE">
+              <div class="horizontal-row" id="parentMIDDLETOP"></div>
+              <div class="horizontal-row" id="parentMIDDLEBOTTOM"></div>
+            </div>
+            <div class="vertical-row" id="parentRIGHT"></div>
+          </div>
+          <div class="horizontal-row" id="parentBOTTOM"></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+<script src="main.js"></script>

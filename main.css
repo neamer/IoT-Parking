@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"), url(./assets/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light"), url(./assets/Roboto-Light.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto-Bold";
+}
+
+body {
+  background-color: #101b21;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.content-wrapper {
+  margin-top: 30px;
+}
+.rounded-element {
+  border-radius: 15px;
+  background-color: rgba(45, 58, 65, 0.28);
+}
+
+header {
+  padding: 30px;
+}
+
+main {
+  width: 1366px;
+  margin: auto;
+}
+
+/* SPACE */
+
+#parentTOP,
+#parentMIDDLETOP,
+#parentMIDDLEBOTTOM {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#parentBOTTOM {
+  display: flex;
+  justify-content: center;
+}
+
+#parentRIGHT {
+  display: flex;
+  flex-direction: column;
+}
+
+#parentMIDDLE {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.horizontal-row > .space {
+  padding: 10px;
+}
+
+.space > img {
+  opacity: 0;
+  transition: 0.2s opacity;
+}
+
+.spaceTOP {
+  border-right: 3px solid white;
+}
+
+.horizontal-row > div {
+  border-right: 3px solid white;
+}
+
+.vertical-row > div {
+  border-bottom: 3px solid white;
+}
+
+.horizontal-row > div > img {
+  width: 60px;
+}
+
+.vertical-row > div > img {
+  width: 60px;
+  transform-origin: center;
+}
+
+.spaceRIGHT > img {
+  transform: rotate(90deg) translateY(-25px);
+}
+
+.spaceLEFT > img {
+  transform: rotate(-90deg) translateY(25px);
+}
+
+.spaceMIDDLEBOTTOM > img {
+  width: 60px;
+  transform: rotate(180deg);
+}
+
+.spaceTOP-last {
+  border-right: none;
+}
+
+.taken-space > img {
+  opacity: 1;
+}
+
+.middle-grid {
+  display: grid;
+  grid-template-columns: 115px 1fr 115px;
+}
+
+.parentMIDDLE {
+  flex-grow: 2;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-family: "Roboto-Light";
+}
+
+@media only screen and (max-width: 1366px) {
+  body {
+    padding: 0;
+    position: relative;
+    padding-top: 140px;
+  }
+
+  header {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .content-wrapper {
+    overflow-x: scroll;
+  }
+}
